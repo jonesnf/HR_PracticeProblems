@@ -17,31 +17,13 @@ public:
 
 Matrix operator+(Matrix x, Matrix y) {
 	int i, j;
-	Matrix result;
-	//can just use size of a since both sizes have to be the same 
-	/*if (x.a.size() != y.a.size()) {
-		return result;
-	}*/
-	
 
 	for (i = 0; i < x.a.size(); i++) {
-		vector<int> temp;
-		for (i = 0; i < x.a[0].size(); i++) {
-			temp.push_back(0);
-		}
-		result.a.push_back(temp);
-	}
-
-	cout << "made it here \n";
-	for (i = 0; i < x.a.size(); i++) {
-		cout << " " << i;
 		for (j = 0; j < x.a[i].size(); j++) {
-			cout << "made it inside here \n";
-			result.a[i][j] = x.a[i][j] + y.a[i][j];
+			x.a[i][j] = x.a[i][j] + y.a[i][j];
 		}
 	}
-
-	return result;
+	return x;
 }
 
 int main() {
