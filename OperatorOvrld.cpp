@@ -7,6 +7,17 @@
 #include <algorithm>
 using namespace std;
 
+/***
+Practice Problem : Operator Overload 
+	SUMMARY: Given two matrices, add them together using operator overloading. 
+	NOTES:
+		- Make a Matrix class that holds a member "a" of type vector<vector<int>>
+		- T => number of test cases
+		- N , M => number or rows, columns respectively. 
+		- Ai,j => values entering row by row
+		- Make sure to use operator overload
+***/
+
 
 class Matrix {
 	
