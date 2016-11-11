@@ -10,30 +10,17 @@
 using namespace std;
 
 /*
-This problem is to get you familiar with virtual functions. Create three classes Person, Professor and Student. 
-The class Person should have data members name and age. The classes Professor and Student should inherit from the class Person.
-
-The class Professor should have two data members: publications and cur_{id}. There will be two member functions: getdata and putdata. 
-The function getdata should get the input from the user: the name, age and publications of the professor.
-The function putdata should print the name, age, publications and the cur_{id} of the professor.
-
-The class Student should have two data members: marks, which is an array of size  and cur_{id}. 
-It has two member functions: getdata and putdata. 
-The function getdata should get the input from the user: the name, age, and the marks of the student in  subjects. 
-The function putdata should print the name, age, sum of the marks and the cur_{id} of the student.
-
-For each object being created of the Professor or the Student class, sequential id's should be assigned to them starting from .
-
-Solve this problem using virtual functions, constructors and static variables. You can create more data members if you want.
-
-Input Format
-
-There are two types of input. If the object being created is of the Professor class, you will have to input the name, age and publications of the professor.
-
-If the object is of the Student class, you will have to input the name, age and the marks of the student in  subjects.
-
-Constraints
-
+PROBLEM: Virtual Functions
+	BRIEF: Create a Student and Professor class that inherits from a Person abstract class.
+		   Collect data about the student/professor, and print the results.
+	INPUT:
+		- How many people
+		- Enter 1 for Student, 2 for professor
+			- if 1, add name, age, 6 test scores, and assign studentID that's unique for each - incrementing by 1
+			- if 2, add name, age, # of publications, and unique professorID that increments by 1
+	OUTPUT:
+		- Print each person and all their data
+			- for students add up all test scores and print sum
 
 */
 
