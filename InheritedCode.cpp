@@ -12,7 +12,7 @@ PROBLEM: Inherited Code
         - T number of lines containing usernames
     OUT: 
         - Valid, invalid, or exception
-        
+
 */
 
 class BadLengthException : public exception{
